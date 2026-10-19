@@ -1,0 +1,19 @@
+---
+Name: silvershop-address-lookup-pro6pp
+After:
+  - '#silvershop-address-lookup'
+---
+SilverShop\AddressLookup\Provider\AddressLookupProviderRegistry:
+  # Register the paid Pro6PP provider alongside the base's free providers. It is AVAILABLE for NL/BE/DE too (see the
+  # README to remap them), but by default only fills the gaps no other provider covers.
+  providers:
+    pro6pp: '%$SilverShop\AddressLookup\Pro6pp\Pro6ppProvider'
+  # GAP-FILL ONLY — map the countries nothing else in the suite resolves: FR and LU (Pro6PP's /autocomplete/{fr,lu}).
+  # Deliberately NOT touched, so the free / better defaults stand:
+  #   NL -> pdok     (free government BAG geocoder; remains the NL default)
+  #   DE -> openplz  (free OpenPLZ; remains the DE default)
+  #   BE -> myparcel (when the MyParcel satellite is installed; otherwise the base's pdok entry falls back to manual)
+  # To use Pro6PP for any of those instead, override by_country in your project (see the README).
+  by_country:
+    FR: pro6pp
+    LU: pro6pp
