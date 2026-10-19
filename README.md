@@ -1,6 +1,6 @@
-# silvershop/address-lookup-pro6pp
+# silvershop-suite/address-lookup-pro6pp
 
-A **satellite provider** for [`silvershop/address-lookup`](https://github.com/silvershop/silvershop-address-lookup)
+A **satellite provider** for [`silvershop-suite/address-lookup`](https://github.com/silvershop/silvershop-address-lookup)
 (CMS 6) that resolves and validates addresses through the **[Pro6PP v2 API](https://pro6pp.nl/developer)**.
 
 It registers one provider (`pro6pp`) in the base module's per-country registry and — out of the box — **fills the gaps
@@ -33,7 +33,7 @@ The API key is sent as the **`authKey` query parameter** (not a header). It ride
 ## Installation
 
 ```bash
-composer require silvershop/address-lookup-pro6pp
+composer require silvershop-suite/address-lookup-pro6pp
 ```
 
 Then run `dev/build?flush=all`.
@@ -108,7 +108,7 @@ empty answer on any miss or fault, so a slow or failing address API never blocks
 - PHP ^8.3
 - silverstripe/framework ^6
 - silvershop/core ^6
-- silvershop/address-lookup ^1
+- silvershop-suite/address-lookup ^1
 - A Pro6PP API key (`SS_PRO6PP_API_KEY`) — paid per call
 
 ## License

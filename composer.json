@@ -1,6 +1,6 @@
 {
-    "name": "silvershop/address-lookup-pro6pp",
-    "description": "Pro6PP address provider for silvershop/address-lookup (CMS 6): a satellite connector that resolves NL addresses structurally (postcode + house number -> street + settlement + municipality + province + lat/lng) via the Pro6PP v2 autocomplete API, and validates/canonicalises BE/DE/FR/LU (+ AT/CH/DK) addresses. Registers the `pro6pp` provider and fills the base module's FR + LU gaps. Paid per-call; key as SS_PRO6PP_API_KEY.",
+    "name": "silvershop-suite/address-lookup-pro6pp",
+    "description": "Pro6PP address provider for silvershop-suite/address-lookup (CMS 6): a satellite connector that resolves NL addresses structurally (postcode + house number -> street + settlement + municipality + province + lat/lng) via the Pro6PP v2 autocomplete API, and validates/canonicalises BE/DE/FR/LU (+ AT/CH/DK) addresses. Registers the `pro6pp` provider and fills the base module's FR + LU gaps. Paid per-call; key as SS_PRO6PP_API_KEY.",
     "type": "silverstripe-vendormodule",
     "license": "BSD-3-Clause",
     "keywords": ["silverstripe", "silvershop", "address", "autocomplete", "postcode", "checkout", "pro6pp", "validation"],
@@ -13,7 +13,7 @@
         "php": "^8.3",
         "silverstripe/framework": "^6.0",
         "silvershop/core": "^6",
-        "silvershop/address-lookup": "^1"
+        "silvershop-suite/address-lookup": "^1"
     },
     "require-dev": {
         "cambis/silverstan": "^2.1",
