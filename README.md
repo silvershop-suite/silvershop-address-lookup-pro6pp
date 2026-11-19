@@ -1,6 +1,6 @@
 # silvershop-suite/address-lookup-pro6pp
 
-A **satellite provider** for [`silvershop-suite/address-lookup`](https://github.com/silvershop/silvershop-address-lookup)
+A **satellite provider** for [`silvershop-suite/address-lookup`](https://github.com/silvershop-suite/silvershop-address-lookup)
 (CMS 6) that resolves and validates addresses through the **[Pro6PP v2 API](https://pro6pp.nl/developer)**.
 
 It registers one provider (`pro6pp`) in the base module's per-country registry and — out of the box — **fills the gaps
